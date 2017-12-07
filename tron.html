@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>tron.js</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="tron.js"></script>
+		<style type="text/css">
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			#game {
+				background-color: #000000;
+				display: block;
+				margin: auto;
+            width: 100%;
+            height: 100%;
+			}
+
+         #hud {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.5;
+            font-size: 16px;
+            font-family: monospace;
+            color: #ffffff;
+         }
+
+         #hud .pane {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: 10px;
+         }
+
+         #hud .pane.active,
+         #hud .pane.permanent {
+            display: block;
+         }
+
+         #hud .score.pane .score {
+            position: absolute;
+            bottom: 0;
+         }
+
+         #hud .score.pane .score.one {
+            left: 0;
+         }
+
+         #hud .score.pane .score.two {
+            right: 0;
+         }
+
+         #hud .pane .option {
+            color: #999999;
+         }
+
+         #hud .pane .option.selected {
+            color: #ffffff;
+         }
+
+         #hud .pane .section {
+            margin: 5px;
+         }
+		</style>
+	</head>
+	<body>
+		<canvas id="game"></canvas>
+      <div id="hud">
+         <div class="score pane permanent">
+            <div class="score one">0</div>
+            <div class="score two">0</div>
+         </div>
+
+         <div class="confirm pane">
+            <div class="note">Are you sure?</div>
+            <div class="inline-options">
+               <div class="yes option inline">Yes</div>
+               <div class="no option inline">No</div>
+            </div>
+         </div>
+
+         <div class="countdown pane">
+            <div class="time note"><span class="number field">3</span></div>
+         </div>
+
+         <div class="crash pane">
+            <div class="loser note"><span class="name field"></span> is dead</div>
+            <div class="round section">
+               <div class="restart option">Play again</div>
+               <div class="quit option">Quit</div>
+            </div>
+         </div>
+
+         <div class="pause pane">
+            <div class="resume option">Resume</div>
+            <div class="restart option">Restart</div>
+            <div class="quit option">Quit</div>
+         </div>
+
+         <div class="menu pane">
+            <div class="note">New Game</div>
+            <div class="new section">
+               <div class="versus option">1 vs 1</div>
+               <div class="ai option">1 vs AI (not implemented)</div>
+               <div class="demo option">AI vs AI (not implemented)</div>
+            </div>
+         </div>
+
+         <div class="options pane">
+         </div>
+      </div>
+      <script>
+      var is_konami_alive = false;
+          if ( window.addEventListener ) {
+          var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65"; //haut haut bas bas gauche droite gauche droite B A
+          window.addEventListener("keydown", function(e){
+            kkeys.push( e.keyCode );
+            if ( kkeys.toString().indexOf( konami ) >= 0 ) {
+              alert('Konami code is alive !');
+              is_konami_alive = true;
+              kkeys = [];
+              alert("Vous pensiez vraiment qu'il y avait des cheat code, IRL ?");
+              alert("D\351sol\351 de vous d\351cevoir.");
+              alert("Souvent, la vie est plus vache qu'on ne le croit.");
+              alert("Il n'y a pas de moyen de revenir en arri\350re, ou de tricher.");
+              alert('Konami code is a lie.');
+              alert("S\351curit\351 routi\350re : tous touch\351s, tous responsables.");
+              document.location.href="http://www.securite-routiere.gouv.fr/profil/motards";
+            }
+          }, true);
+        }
+        </script>
+	</body>
+</html>

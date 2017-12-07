@@ -1,0 +1,54 @@
+h1, h2, h3, h4, h5, h6, p
+{
+    text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+body{
+	background: beige;
+}
+
+#conteneur{
+	width: 70%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navigation{
+	background-color: burlywood;
+	display: flex;
+	padding: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#onglet{
+	flex: 1;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+body.rick{
+    background-image: url(imgs/rick.gif);
+    background-repeat: repeat;
+}
+
+body.black{
+	background-color: black;
+}
+
+a.delay{
+
+}
