@@ -60,7 +60,7 @@ function statistic (lines, carNumber, laps, gameOver) {
 	this.laps = laps;
 	var lap = -1;
 	var lastLine = -1;
-	this.makeLaps = 0; 
+	this.makeLaps = 0;
 	this.lapsTime = [];
 	var lapTime;
 	this.lastTime;

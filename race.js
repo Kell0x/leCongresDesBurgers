@@ -11,8 +11,10 @@ leftPanel = null;
 
 pause = false;
 inGame = false;
-hollywood = false;
+hollywood = true;
 readingTimer = "";
+dead=false;
+mort=true;
 
 carImg = [];
 
@@ -24,32 +26,32 @@ window.onload = function() {
     carImg[0].onload = function () {
         i++;
         downloadCheck(i);
-    }   
+    }
     carImg[1] = new Image;
     carImg[1].src = 'imgs/red_bull.gif';
     carImg[1].onload = function () {
         i++;
         downloadCheck(i);
-    }   
+    }
     carImgDemage = new Image;
     carImgDemage.src = 'imgs/blue_car1_demage.gif';
     carImgDemage.onload = function () {
         i++;
         downloadCheck(i);
-    }  
+    }
     traceMap = new Image;
     traceMap.src = 'imgs/Vroom_SS.jpg';
     traceMap.onload = function () {
         i++
         downloadCheck(i);
-    }   
+    }
 
     explosion = new Image;
     explosion.src = 'imgs/EXPLOSION.bmp';
     explosion.onload = function () {
         i++
         downloadCheck(i);
-    }   
+    }
 
     treeImg = new Image;
     treeImg.src = 'imgs/tree.gif';
@@ -109,7 +111,7 @@ function update () {
     for (var i in userDriverSet) {
         userDriverSet[i].action();
         var line = track.checkBorder(userDriverSet[i].car);
-        statisticSet.carInLine(i, line); 
+        statisticSet.carInLine(i, line);
     }
     for (var i in bang) {
         bang[i].update();
@@ -123,6 +125,7 @@ function gameChangePause () {
 function gameOver(carId) {
     gameOverScreen.gameOver(carId);
     inGame = false;
+    gameChangePause();
 }
 
 function beginExplosion(car) {
@@ -133,8 +136,12 @@ function beginExplosion(car) {
     }
 }
 
-function hollywoodMdoe () {
-    hollywood = !hollywood;
+function checkPlayersAlive() {
+    if( hollywood && cars[0].demage && cars[1].demage && mort ) {
+        alert("Tout le monde est mort...");
+        mort=false;
+        document.location.href="http://www.securite-routiere.gouv.fr/";
+    }
 }
 
 //--------------------------------------------
@@ -151,6 +158,7 @@ function draw() {
     drawReadingTimer();
     gameOverScreen.drow();
     drawFps();
+    checkPlayersAlive();
 }
 
 function drawBackground () {
@@ -215,7 +223,7 @@ function count(){
     for (var i = frameLog.length - 1; i >= 0; i--) {
         if (naw - frameLog[i] > 1000) {
             return frameLog.length + 1 - i;
-        } 
+        }
     }
 }
 
@@ -249,21 +257,21 @@ function bigBang(context, image, frameHeight, frameWidth, frameCount) {
             if (this.counter++ == this.divisor) {
                 this.counter = 0;
                 this.frameId++;
-            }
+            };
         }
     }
 
     this.drow = function () {
         if (this.begin) {
             context.drawImage(
-                this.image, 
-                this.frameId * this.frameWidth, 
-                0, 
-                this.frameWidth, 
+                this.image,
+                this.frameId * this.frameWidth,
+                0,
+                this.frameWidth,
                 this.frameHeight,
-                this.x, 
-                this.y, 
-                this.frameWidth, 
+                this.x,
+                this.y,
+                this.frameWidth,
                 this.frameHeight
             );
         }

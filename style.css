@@ -1,0 +1,23 @@
+body{
+  background-color: black;
+}
+
+a{
+  color: white;
+}
+
+div{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

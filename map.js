@@ -10,7 +10,7 @@ function map (traceMap) {
 		for (var i = 1; i < traceMap.path.length; i++) {
 			trace.push (area (traceMap.path[i - 1], traceMap.path[i]));
 		}
-		trace.push (area (traceMap.path[traceMap.path.length - 1], 
+		trace.push (area (traceMap.path[traceMap.path.length - 1],
 			              traceMap.path[0]));
 		return trace;
 	}
@@ -25,7 +25,7 @@ function map (traceMap) {
 			cos : Math.cos (angle),
 			radius : begin[2],
 			sqrRadius : Math.pow (begin[2], 2),
-			length : Math.sqrt (Math.pow (end[1] - begin[1], 2) + 
+			length : Math.sqrt (Math.pow (end[1] - begin[1], 2) +
 				                Math.pow (end[0] - begin[0], 2))
 		}
 	}
@@ -117,7 +117,7 @@ function map (traceMap) {
 			canvas.rotate (trace[i].angle);
 			drowCircle (canvas, 0, 0, trace[i].radius + width);
 			drowCircle (canvas, trace[i].length, 0, trace[i].radius + width);
-			canvas.fillRect (0, - trace[i].radius - width, 
+			canvas.fillRect (0, - trace[i].radius - width,
 				             trace[i].length, 2 * (trace[i].radius + width));
 			canvas.restore();
 		}
@@ -176,9 +176,9 @@ function map (traceMap) {
 	}
 
 	function drowCircle(canvas, x, y, radius) {
-		canvas.beginPath(); 
+		canvas.beginPath();
 		canvas.arc(x, y, radius, 0, Math.PI*2, false);
-		canvas.closePath();  
+		canvas.closePath();
 		canvas.fill();
 	}
 
@@ -195,7 +195,7 @@ function map (traceMap) {
 
 Level1 = {
 	path : [
-		[230, 84, 60], 
+		[230, 84, 60],
 		[650, 100, 60],
 		[700, 400, 60],
 		[450, 500, 60],
@@ -207,7 +207,7 @@ Level1 = {
 	],
 	trees : [
 	],
-	
+
 	cars : function () {
 		return [
 			new car ([200, 100], Math.PI / 2),
@@ -215,5 +215,5 @@ Level1 = {
 		]
 	}
 
-            
+
 }

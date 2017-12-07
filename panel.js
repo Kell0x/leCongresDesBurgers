@@ -70,7 +70,7 @@ function panel (statisticSet, canvas) {
 
 	function drawLapNumbers () {
 		canvas.fillStyle = "#222";
-		for (var i = 0; i < statisticSet.laps; i++) { 
+		for (var i = 0; i < statisticSet.laps; i++) {
 			canvas.fillText(i, 15, 50 + i * 20);
 		}
 	}
@@ -94,31 +94,31 @@ function panel (statisticSet, canvas) {
 	}
 
 	function drawGameControl () {
-		hollywoodCheck ();
+		//hollywoodCheck ();
 		newGame ();
 		pauseView ();
 	}
 
-	function hollywoodCheck () {
-		canvas.fillStyle ="#222"
-		canvas.fillRect(32, 396, 16, 16);
-		canvas.fillStyle ="#bbb"
-		canvas.fillRect(34, 398, 12, 12);
-		if (hollywood) {
-			canvas.beginPath ();
-			canvas.strokeStyle = "#222";
-			canvas.lineWidth = 2;
-			canvas.moveTo (35, 399);
-			canvas.lineTo (45, 409);
-			canvas.moveTo (35, 409);
-			canvas.lineTo (45, 399);
-			canvas.stroke ();
-		}
-		canvas.fillStyle ="#080"
-		canvas.font = "13pt Arial";
-		canvas.fillText("HOLLYWOOD", 60, 410);
-		canvas.fillText("MODE", 60, 429);
-	}
+	//function hollywoodCheck () {
+	//	canvas.fillStyle ="#222"
+	//	canvas.fillRect(32, 396, 16, 16);
+	//	canvas.fillStyle ="#bbb"
+	//	canvas.fillRect(34, 398, 12, 12);
+	//	if (hollywood) {
+	//		canvas.beginPath ();
+	//		canvas.strokeStyle = "#222";
+	//		canvas.lineWidth = 2;
+	//		canvas.moveTo (35, 399);
+	//		canvas.lineTo (45, 409);
+	//		canvas.moveTo (35, 409);
+	//		canvas.lineTo (45, 399);
+	//		canvas.stroke ();
+	//	}
+	//	canvas.fillStyle ="#080"
+	//	canvas.font = "13pt Arial";
+	//	canvas.fillText("HOLLYWOOD", 60, 410);
+	//	canvas.fillText("MODE", 60, 429);
+	//}
 
 	function newGame() {
 		canvas.fillStyle ="#222"
@@ -163,8 +163,8 @@ function panel (statisticSet, canvas) {
 
 function addButton (start, size, action) {
 	buttons.push({
-		 start : start, 
-		 size : size, 
+		 start : start,
+		 size : size,
 		 action : action});
 }
 

@@ -17,7 +17,7 @@ function carDrive(car, keySet) {
 	var keySet = keySet;
 
 	this.action = function() {
-		pressedKeys[keySet.left] 
+		pressedKeys[keySet.left]
 	}
 
 	this.action = function() {
@@ -30,7 +30,7 @@ function carDrive(car, keySet) {
 	            this.car.forward();
 	        }
 	        if (pressedKeys[keySet.down]) {
-	            this.car.back() 
+	            this.car.back()
 	        }
 	    } else {
 	        this.car.neutral();
@@ -39,7 +39,7 @@ function carDrive(car, keySet) {
 	            this.car.turnLeft();
 	    }
 	    if (pressedKeys[keySet.right]) {
-	        this.car.turnRight() 
+	        this.car.turnRight()
 	    }
 	    this.car.update();
 	}
@@ -48,8 +48,8 @@ function carDrive(car, keySet) {
 
 controlKeys = {
 	AWDS : {
-		left : 65,
-		up : 87,
+		left : 81,
+		up : 90,
 		right : 68,
 		down : 83
 	},
