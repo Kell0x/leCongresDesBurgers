@@ -1,0 +1,237 @@
+h1, h2, h4, h5, h6, p
+{
+    text-align: center;
+}
+
+ h3{
+   text-align: center;
+   color: white;
+ }
+
+a{
+  flex: 1;
+	text-decoration: none;
+	color: black;
+  padding: 3px;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+body{
+  background-image: url(imgs/redrum.jpg);
+  background-repeat: repeat;
+}
+
+#conteneur{
+	width: 70%;
+	background-color: #850606;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navigationup{
+	background-color: #630404;
+	display: flex;
+	padding: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#ongletup{
+	flex: 1;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+#navigation{
+	background-color: #630404;
+	display: flex;
+	padding: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#onglet{
+	flex: 1;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal;
+  margin: auto;
+}
+
+#team{
+	display: flex;
+	padding: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+body.rick{
+    background-image: url(imgs/rick.gif);
+    background-repeat: repeat;
+}
+
+body.black{
+	background-color: black;
+}
+
+a.delay{
+
+}
+
+.example-one {
+  font-size: 100px;
+  color: white;
+  position: relative;
+}
+@keyframes example-one-anim-1 {
+  0% {
+    clip: rect(13px, 450px, 97px, 0);
+  }
+  5.88235% {
+    clip: rect(106px, 450px, 25px, 0);
+  }
+  11.76471% {
+    clip: rect(98px, 450px, 73px, 0);
+  }
+  17.64706% {
+    clip: rect(102px, 450px, 44px, 0);
+  }
+  23.52941% {
+    clip: rect(6px, 450px, 85px, 0);
+  }
+  29.41176% {
+    clip: rect(102px, 450px, 115px, 0);
+  }
+  35.29412% {
+    clip: rect(33px, 450px, 62px, 0);
+  }
+  41.17647% {
+    clip: rect(110px, 450px, 26px, 0);
+  }
+  47.05882% {
+    clip: rect(101px, 450px, 86px, 0);
+  }
+  52.94118% {
+    clip: rect(47px, 450px, 56px, 0);
+  }
+  58.82353% {
+    clip: rect(23px, 450px, 47px, 0);
+  }
+  64.70588% {
+    clip: rect(64px, 450px, 63px, 0);
+  }
+  70.58824% {
+    clip: rect(24px, 450px, 108px, 0);
+  }
+  76.47059% {
+    clip: rect(27px, 450px, 29px, 0);
+  }
+  82.35294% {
+    clip: rect(37px, 450px, 91px, 0);
+  }
+  88.23529% {
+    clip: rect(55px, 450px, 62px, 0);
+  }
+  94.11765% {
+    clip: rect(26px, 450px, 111px, 0);
+  }
+  100% {
+    clip: rect(92px, 450px, 76px, 0);
+  }
+}
+@keyframes example-one-anim-2 {
+  0% {
+    clip: rect(72px, 450px, 96px, 0);
+  }
+  5.88235% {
+    clip: rect(108px, 450px, 96px, 0);
+  }
+  11.76471% {
+    clip: rect(33px, 450px, 46px, 0);
+  }
+  17.64706% {
+    clip: rect(12px, 450px, 83px, 0);
+  }
+  23.52941% {
+    clip: rect(43px, 450px, 109px, 0);
+  }
+  29.41176% {
+    clip: rect(48px, 450px, 82px, 0);
+  }
+  35.29412% {
+    clip: rect(28px, 450px, 11px, 0);
+  }
+  41.17647% {
+    clip: rect(85px, 450px, 39px, 0);
+  }
+  47.05882% {
+    clip: rect(29px, 450px, 21px, 0);
+  }
+  52.94118% {
+    clip: rect(38px, 450px, 80px, 0);
+  }
+  58.82353% {
+    clip: rect(54px, 450px, 9px, 0);
+  }
+  64.70588% {
+    clip: rect(81px, 450px, 69px, 0);
+  }
+  70.58824% {
+    clip: rect(109px, 450px, 78px, 0);
+  }
+  76.47059% {
+    clip: rect(64px, 450px, 45px, 0);
+  }
+  82.35294% {
+    clip: rect(75px, 450px, 71px, 0);
+  }
+  88.23529% {
+    clip: rect(48px, 450px, 68px, 0);
+  }
+  94.11765% {
+    clip: rect(1px, 450px, 109px, 0);
+  }
+  100% {
+    clip: rect(43px, 450px, 93px, 0);
+  }
+}
+.example-one:before, .example-one:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #630404;
+  clip: rect(0, 0, 0, 0);
+}
+.example-one:after {
+  left: 2px;
+  text-shadow: -3px 0 red;
+  animation: example-one-anim-1 2s infinite linear alternate-reverse;
+}
+.example-one:before {
+  left: -2px;
+  text-shadow: 3px 0 blue;
+  animation: example-one-anim-2 3s infinite linear alternate-reverse;
+}
+
+body {
+  background-color: #630404;
+  font-family: Sans-serif;
+  padding: 20px;
+}
+
+.wrap {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}

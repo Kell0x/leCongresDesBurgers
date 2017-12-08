@@ -3,7 +3,13 @@ h1, h2, h3, h4, h5, h6, p
     text-align: center;
 }
 
+.example-one {
+  border-style: solid;
+  border-radius: 5px;
+}
+
 a{
+  flex: 1;
 	text-decoration: none;
 	color: black;
   padding: 3px;
@@ -12,21 +18,28 @@ a{
 IMG.displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto;
+    opacity: 1.0;
+}
 
 body{
-	background: beige;
+  background-image: url("imgs/wallpaper.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #conteneur{
 	width: 70%;
-	background-color: white;
+	background-color: #293133;
 	margin-left: auto;
 	margin-right: auto;
+  opacity: 0.9;
 }
 
 #navigationup{
-	background-color: burlywood;
+	background-color: grey;
 	display: flex;
 	padding: 0px;
 	padding-left: 0px;
@@ -42,7 +55,7 @@ body{
 }
 
 #navigation{
-	background-color: burlywood;
+	background-color: grey;
 	display: flex;
 	padding: 5px;
 	padding-left: 0px;
@@ -74,6 +87,7 @@ body.black{
 	background-color: black;
 }
 
-a.delay{
-
+div{
+  margin-left: auto;
+  margin-right: auto;
 }
