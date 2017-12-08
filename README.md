@@ -1,4 +1,6 @@
-﻿Je dirais qu'il n'y a pas de bon ou de mauvais burger, je dirais, si je dois
+﻿#README
+
+Je dirais qu'il n'y a pas de bon ou de mauvais burger, je dirais, si je dois
 résumer ma vie avec vous aujourd'hui, je commencerais tout d'abord par des
 rencontres, des gens qui m'ont tendu la main, peut-être à un moment où je ne
 pouvais pas, où j'étais seul chez moi, et c'est assez curieux de se dire que le
