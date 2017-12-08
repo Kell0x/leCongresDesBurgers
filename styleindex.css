@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6, p
 a{
 	text-decoration: none;
 	color: black;
+  padding: 3px;
 }
 
 IMG.displayed {
@@ -22,6 +23,23 @@ body{
 	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#navigationup{
+	background-color: burlywood;
+	display: flex;
+	padding: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#ongletup{
+	flex: 1;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal;
+  border: 3px black groove;
 }
 
 #navigation{
