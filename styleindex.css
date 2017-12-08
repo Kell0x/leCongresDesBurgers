@@ -6,6 +6,9 @@ h1, h2, h3, h4, h5, h6, p
 .example-one {
   border-style: solid;
   border-radius: 5px;
+  display: inline-block;
+  height: 1.2em;
+  width: 4em;
 }
 
 a{
