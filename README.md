@@ -21,6 +21,7 @@ pour tous, une mise en garde. Au travers de ce jeu, découvrez un danger, un
 risque, un péril.
 
 # Konami Code is Alive
-Le code Konami (コナミコマンド, Konami Komando?, litt. Commande Konami) est un cheat code qui peut être utilisé dans de nombreux jeux vidéo de Konami, activant généralement une option secrète. Ce code fut utilisé pour la première fois en 1986 dans Gradius pour la Nintendo Entertainment System. Durant le jeu, le joueur doit presser la séquence suivante de boutons sur la manette de jeu :
+*"Le code Konami (コナミコマンド, Konami Komando?, litt. Commande Konami) est un cheat code qui peut être utilisé dans de nombreux jeux vidéo de Konami, activant généralement une option secrète. Ce code fut utilisé pour la première fois en 1986 dans Gradius pour la Nintendo Entertainment System. Durant le jeu, le joueur doit presser la séquence suivante de boutons sur la manette de jeu :"*
 ### ↑ ↑ ↓ ↓ ← → ← → B A
+ - *https://fr.wikipedia.org/wiki/Code_Konami*
 
