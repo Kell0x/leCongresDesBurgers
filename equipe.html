@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="styleindex.css" />
+      <title>L'équipe</title>
+
+    </head>
+    <body>
+
+      <div id="conteneur">
+
+      <div id="navigation">
+         <div id="onglet"><h3><a href="index.html">Accueil</a></h3></div>
+      </div>
+      <div id="navigation">
+    	   <div id="ongletup"><h3><a href="tron.html">TRON</a></h3></div>
+         <div id="ongletup"><h3><a href="drift.html">DRIFT</a></h3></div>
+      </div>
+
+      <div id="team">
+        <img class="displayed" src="imgs/erwan.png" alt="erwan">
+        <h1><p>Erwan<br />Il est gentil, même s'il a l'air de sortir de prison...</p></h1>
+      </div>
+
+      <div id="team">
+      <h1><p>Solène<br />Elle est démoniaque, ce n'est pas qu'une apparence</p></h1>
+        <img class="displayed" src="imgs/solene.png" alt="solène">
+      </div>
+
+      <div id="team">
+        <img class="displayed" src="imgs/julien.png" alt="julien">
+        <h1><p>Julien<br />Il a 10 ans dans sa tête... et ça se voit !</p></h1>
+      </div>
+
+      <div id="team">
+      <h1><p>Pauline<br />Le fruit du plan à 3... que dire de plus...</p></h1>
+        <img class="displayed" src="imgs/pauline.png" alt="pauline">
+      </div>
+
+      <div id="team">
+        <img class="displayed" src="imgs/alexandre.png" alt="alexandre">
+        <h1><p>Alexandre<br />Il est grand, il est beau, il sent bon le sable chaud !</p></h1>
+      </div>
+
+        <div id="navigation">
+          <a href="https://www.nuitdelinfo.com/" title="https://www.nuitdelinfo.com/"> <img class="displayed" src="imgs/nuit_info_logo.png" alt="Nuit de l'Info" width="240" height="125"> </a>
+
+          <div id="onglet"> <a href="http://www.perdu.com/">L'équipe</a> </div>
+
+          <a href="https://www.esiea.fr/" title="https://www.esiea.fr/"> <img class="displayed" src="imgs/Logo-ESIEA.jpg" alt="ESIEA" width="240" height="125"> </a>
+        </div>
+
+     </div>
+
+     <script>
+      if ( window.addEventListener ) {
+        var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65"; //haut haut bas bas gauche droite gauche droite B A
+        window.addEventListener("keydown", function(e){
+          kkeys.push( e.keyCode );
+          if ( kkeys.toString().indexOf( konami ) >= 0 ) {
+            document.location.href="lol/lol.html";
+          }
+        }, true);
+      }
+      </script>
+
+    </body>
+</html>

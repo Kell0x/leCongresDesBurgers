@@ -56,6 +56,14 @@ body{
 	text-align: center;
 	vertical-align: middle;
 	line-height: normal;
+  margin: auto;
+}
+
+#team{
+	display: flex;
+	padding: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 body.rick{
