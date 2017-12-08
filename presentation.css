@@ -1,0 +1,30 @@
+.flex
+{
+	display:flex
+}
+
+.couleur_jaune_AC
+{
+	color: #7e6d18;
+	text-align: center;
+	font-size:x-large;
+	font-family: 'Arabic Typesetting';
+}
+
+.background
+{
+	background-image:url(https://i.gyazo.com/3c22bf121a94b96c85515c2ee293e0df.png);
+}
+.coin_inferieur_droit
+{
+	display:block;
+	margin-top:45%;
+	margin-left:75%;
+}
+.mid
+{
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+
+}

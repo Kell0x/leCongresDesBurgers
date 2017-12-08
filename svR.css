@@ -1,0 +1,17 @@
+﻿body {
+    color: black;
+    background-color: white;
+    background-image: url(https://lh3.googleusercontent.com/-mEGMoCvAKGE/UZ0Y7ZiMrtI/AAAAAAAADz0/3SbSrIJTg-o/s918/rayman.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.conteneur {
+    background-color: lightgray;
+    border: 2px dotted;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}

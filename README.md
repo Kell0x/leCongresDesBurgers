@@ -27,3 +27,13 @@ risque, un péril.
 ### ↑ ↑ ↓ ↓ ← → ← → B A
  - *https://fr.wikipedia.org/wiki/Code_Konami*
 
+# Procédure de lancement
+Le site est hébergé à l'adresse suivante jusqu'au 21 Décembre 2017 :
+### 217.182.87.150
+Passé ce délai, il est toujours possible de l'héberger localement en ouvrant le fichier index.html avec un navigateur web.
+Préférez **Mozilla Firefox** ou **Google Chrome** à **Internet Explorer**.
+le Konami Code est exécutable à partir des pages suivantes du site :
+* index.html
+* tron.html
+* drift.html
+* equipe.html

@@ -1,0 +1,17 @@
+﻿body {
+    color: black;
+    background-color: white;
+    background-image: url(http://www.gamersheroes.com/wp-content/uploads/2013/09/Ubisoft-News.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.conteneur {
+    background-color: lightgray;
+    border: 2px dotted;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}

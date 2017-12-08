@@ -1,0 +1,9 @@
+﻿body {
+    color: black;
+    background-color: black;
+    background-image: url("PoP.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}

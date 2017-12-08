@@ -1,0 +1,85 @@
+tr {
+	margin : 0px !important;
+	padding : 0px !important;
+	line-height:0px !important;
+	width : 20px !important;
+	height: 20px !important;
+}
+td {
+	background-color:#000;
+	margin : 0px !important;
+	padding : 0px !important;
+	width : 20px !important;
+	height: 20px !important;
+	text-align : center;
+	font-weight: bold;
+}
+
+th {
+	border:0;
+}
+
+th.last {
+	text-align : right;
+}
+
+td img {
+	margin : 0;
+	padding : 0;
+}
+
+td.unknown {
+	background-color: #dbdbdb;
+}
+
+.class1 {
+	color: #1eff00;
+	font-family: Impact;
+	font-weight: bold;
+}
+.class2 {
+	color: #1eff00;
+	font-family: Impact;
+	font-weight: bold;
+}
+.class3 {
+	color: #1eff00;
+	font-family: Impact;
+	font-weight: bold;
+}
+.class4 {
+	color: #1eff00;
+	font-family: Impact;
+	font-weight: bold;
+} 
+.class5 {
+	color: #1eff00;
+	font-family: Impact;
+	font-weight: bold;
+}
+.class6 {
+	color: #1eff00;
+	font-family: Impact;
+	font-weight: bold;
+}
+.class7 {
+	color: #1eff00;
+	font-family: Impact;
+	font-weight: bold;
+}
+.class8 {
+	color: #1eff00;
+	font-family: Impact;
+	font-weight: bold;
+}
+
+#bombe {
+	padding:0;
+	padding-left : 5px;
+}
+
+#chrono {
+	padding:0;
+	padding-right : 5px;
+	text-align : right;
+}
